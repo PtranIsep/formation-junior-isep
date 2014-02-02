@@ -4,8 +4,6 @@ import java.util.InputMismatchException;
 import java.util.Scanner;
 
 /**
- * Cette classe a ete cree a but educatif, sous license Creative Commons
- * 
  * Ce programme est suffisament clair pour que vous puissiez le comprendre sans
  * commentaires, neanmoins je les ai rajoutes afin pour vous appreniez a lire un
  * programme, afin que la prochaine fois vous n'ayez effectivement plus besoin
@@ -272,7 +270,7 @@ public class TicTacToeFirst {
 	 * Ici le nom de la fonction est tres important, il informe de plusieurs
 	 * choses : 1. nous allons recuperer des informations de la part de
 	 * l'utilisateur, 2. ces informations seront securisees. Cette seconde
-	 * information est trse importante car ca signifie que les tests ont deja
+	 * information est tres importante car elle signifie que les tests ont deja
 	 * ete fait. Ainsi on peut utiliser cette fonction sans se preocupper de la
 	 * pertinence du resultat : nous faisons confaince au developpeur qui a
 	 * utilise ce nom de fonction pour une raison bien precise.
@@ -317,6 +315,12 @@ public class TicTacToeFirst {
 		return sum;
 	}
 
+	/*
+	 * ici, nous cherchons d'abord a savoir si un des joueurs a gagne. Ensuite
+	 * nous regardons si la grille est pleine. alors : si il y a un gagnant ou
+	 * renvoie true, sinon on informe si la grille ets pleine et donc si le jeu
+	 * est termine
+	 */
 	private static boolean isGameEnded(int[][] gameBoard) {
 		boolean thereIsOneWinner = isThereWinner(gameBoard);
 		boolean gridIsFull = isGridFull(gameBoard);
